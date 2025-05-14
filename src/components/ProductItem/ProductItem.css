@@ -1,0 +1,101 @@
+.item-contain {
+  width: 270px;
+  height: 400px;
+  position: relative;
+  text-align: start;
+  cursor: pointer;
+  overflow: hidden;
+  background: #f4f5f7;
+}
+.item-img-contain {
+  width: 100%;
+  height: calc(100% - 120px);
+  overflow: hidden;
+  position: relative;
+}
+.item-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 46, 46, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.item-hover-btn {
+  color: #b88e2f;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 20px;
+  cursor: pointer;
+  background: #fff;
+  outline: none;
+  border: none;
+}
+.item-img-contain:hover .item-hover-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+.item-img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-name {
+  margin-top: 14px;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.item-sub-name {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #898989;
+}
+.item-price {
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.new-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #33d2b5;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (min-width: 320px) and (max-width: 750px) {
+  .item-contain {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .item-hover-overlay {
+    display: none;
+  }
+  .item-name {
+    font-size: 15px;
+  }
+  .item-price {
+    font-size: 16px;
+  }
+}

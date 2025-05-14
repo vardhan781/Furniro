@@ -1,0 +1,230 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.product-upper-contain {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  height: 80px;
+  background: #f9f1e7;
+  padding-left: 50px;
+  align-items: center;
+}
+.product-upper-contain img {
+  width: 16px;
+  height: 16px;
+}
+.product-nav-name {
+  color: #9f9f9f;
+  cursor: pointer;
+}
+.product-main-contain {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  height: 500px;
+}
+.product-img-container {
+  width: 400px;
+  height: 100%;
+}
+.product-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.product-other-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 500px;
+}
+.product-name {
+  font-size: 45px;
+  font-weight: 400;
+}
+.product-price {
+  font-size: 22px;
+  font-weight: 500;
+  color: #9f9f9f;
+}
+.product-desc {
+  font-size: 18px;
+  font-weight: 500;
+  color: #252525;
+}
+.product-size {
+  color: #9f9f9f;
+  font-weight: 500;
+  font-size: 18px;
+}
+.add-to-cart-btn {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  border: 1px solid black;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.you-may-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.also-check {
+  font-size: 30px;
+  font-weight: 500;
+}
+.also-see-products {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 30px;
+  justify-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .product-upper-contain {
+    gap: 8px;
+    padding-left: 20px;
+  }
+  .product-main-contain {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 800px;
+  }
+  .product-img-container {
+    width: 100%;
+    height: 500px;
+  }
+  .product-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .product-other-details {
+    padding: 0 20px;
+    width: 100%;
+    gap: 8px;
+  }
+  .product-name {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .product-price {
+    font-size: 18px;
+  }
+  .add-to-cart-btn {
+    padding: 5px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  .also-check {
+    font-size: 22px;
+  }
+  .also-see-products {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 550px) {
+  .product-upper-contain {
+    gap: 8px;
+    padding-left: 20px;
+  }
+  .product-main-contain {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 800px;
+  }
+  .product-img-container {
+    width: 100%;
+    height: 500px;
+  }
+  .product-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .product-other-details {
+    padding: 0 20px;
+    width: 100%;
+    gap: 20px;
+  }
+  .product-name {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .product-price {
+    font-size: 18px;
+  }
+  .add-to-cart-btn {
+    padding: 5px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  .also-check {
+    font-size: 22px;
+  }
+  .also-see-products {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+  .product-main-contain {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 900px;
+  }
+  .product-img-container {
+    width: 100%;
+    height: 600px;
+  }
+  .product-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .product-other-details {
+    padding: 0 20px;
+    width: 100%;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 890px) {
+  .also-see-products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (min-width: 890px) and (max-width: 1250px) {
+  .also-see-products {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  .product-main-contain {
+    padding: 20px;
+    gap: 20px;
+  }
+}

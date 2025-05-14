@@ -1,0 +1,105 @@
+.contact-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.contact-head {
+  font-size: 30px;
+  font-weight: 600;
+}
+.contact-sub-head {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: #9f9f9f;
+}
+.contact-detail-and-form {
+  margin-top: 40px;
+  display: flex;
+  align-items: start;
+  gap: 80px;
+}
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-hotline {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+}
+.contact-hotline img {
+  margin-top: 4px;
+  width: 22px;
+  height: 22px;
+}
+.hotline-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.head-hot {
+  font-size: 20px;
+  font-weight: 500;
+}
+.head-cold {
+  font-size: 15px;
+  font-weight: 400;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.con-title {
+  font-size: 15px;
+  font-weight: 500;
+}
+.con-input {
+  padding: 8px 10px;
+  width: 300px;
+  resize: none;
+  border: 1px solid #9f9f9f;
+  outline: none;
+  color: #383838;
+  border-radius: 5px;
+}
+.contact-submit {
+  padding: 8px 12px;
+  width: 180px;
+  color: white;
+  background: #b88e2f;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .contact-container {
+    padding: 20px;
+  }
+  .contact-head {
+    font-size: 24px;
+  }
+  .contact-sub-head {
+    font-size: 14px;
+  }
+  .contact-detail-and-form {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .contact-container {
+    padding: 20px;
+  }
+  .contact-detail-and-form {
+    flex-direction: column;
+  }
+}

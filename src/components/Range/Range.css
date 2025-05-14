@@ -1,0 +1,132 @@
+.range-contain {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  text-align: center;
+}
+.range-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333333;
+}
+.range-desc {
+  color: #666666;
+}
+.explore-range {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.explore-inside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: #333333;
+}
+.explore-inside img {
+  width: 400px;
+  height: 540px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.explore-inside p {
+  font-weight: 600;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .range-contain {
+    padding: 20px;
+  }
+  .range-title {
+    font-size: 22px;
+  }
+  .range-desc {
+    font-size: 14px;
+  }
+  .explore-range {
+    gap: 20px;
+    overflow-x: scroll;
+    justify-content: start;
+    margin-top: 15px;
+  }
+  .explore-inside {
+    gap: 12px;
+  }
+  .explore-inside img {
+    width: 250px;
+    height: 360px;
+    border-radius: 0;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 550px) {
+  .range-contain {
+    padding: 20px;
+  }
+  .range-title {
+    font-size: 25px;
+  }
+  .range-desc {
+    font-size: 16px;
+  }
+  .explore-range {
+    gap: 20px;
+    overflow-x: scroll;
+    justify-content: start;
+    margin-top: 15px;
+  }
+  .explore-inside {
+    gap: 15px;
+  }
+  .explore-inside img {
+    width: 250px;
+    height: 360px;
+    border-radius: 0;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 834px) {
+  .range-contain {
+    padding: 22px;
+  }
+  .explore-range {
+    gap: 20px;
+    overflow-x: scroll;
+    justify-content: start;
+    margin-top: 15px;
+  }
+  .explore-inside {
+    gap: 20px;
+  }
+  .explore-inside img {
+    width: 250px;
+    height: 360px;
+    border-radius: 0;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1303px) {
+  .range-contain {
+    padding: 32px;
+  }
+  .explore-range {
+    gap: 20px;
+    overflow-x: scroll;
+    justify-content: start;
+    margin-top: 15px;
+  }
+  .explore-inside {
+    gap: 20px;
+  }
+  .explore-inside img {
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
